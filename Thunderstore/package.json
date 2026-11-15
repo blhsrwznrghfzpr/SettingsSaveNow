@@ -1,0 +1,12 @@
+{
+  "team": "blhsrwznrghfzpr",
+  "community": "resonite",
+  "categories": ["mods", "dashboard", "ai-generated"],
+  "name": "SettingsSaveNow",
+  "website_url": "https://github.com/blhsrwznrghfzpr/SettingsSaveNow",
+  "description": "Adds a Save settings button to Resonite's settings screen. Save local and account settings without exiting the game.",
+  "dependencies": [
+    "ResoniteModding-BepisLoader-1.7.0",
+    "ResoniteModding-BepInExResoniteShim-0.9.3"
+  ]
+}

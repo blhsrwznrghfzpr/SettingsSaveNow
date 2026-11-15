@@ -1,0 +1,16 @@
+<Project>
+  <Import Project="Sdk.props" Sdk="Remora.Resonite.Sdk" />
+  <PropertyGroup>
+    <ResoniteTargetModLoader>ResoniteModLoaderStandalone</ResoniteTargetModLoader>
+  </PropertyGroup>
+  <ItemGroup>
+    <ResoniteReference Include="FrooxEngine" />
+    <ResoniteReference Include="Elements.Core" />
+    <ResoniteReference Include="Elements.Assets" />
+  </ItemGroup>
+  <Import Project="Sdk.targets" Sdk="Remora.Resonite.Sdk" />
+  <!-- RML and Harmony are supplied by the installed loader. -->
+  <ItemGroup>
+    <PackageReference Update="ResoniteModLoader" ExcludeAssets="runtime" />
+  </ItemGroup>
+</Project>

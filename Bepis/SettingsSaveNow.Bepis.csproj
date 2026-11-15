@@ -1,0 +1,17 @@
+<Project>
+  <Import Project="Sdk.props" Sdk="Remora.Resonite.Sdk" />
+  <PropertyGroup>
+    <ResoniteTargetModLoader>BepisLoader</ResoniteTargetModLoader>
+  </PropertyGroup>
+  <ItemGroup>
+    <ResoniteReference Include="FrooxEngine" />
+    <ResoniteReference Include="Elements.Core" />
+    <ResoniteReference Include="Elements.Assets" />
+  </ItemGroup>
+  <Import Project="Sdk.targets" Sdk="Remora.Resonite.Sdk" />
+  <!-- The loader/dependency packages supply these. Never bundle duplicate plugins. -->
+  <ItemGroup>
+    <PackageReference Update="ResoniteModding.BepInExResoniteShim" ExcludeAssets="runtime" />
+    <PackageReference Update="ResoniteModding.BepisResoniteWrapper" ExcludeAssets="runtime" />
+  </ItemGroup>
+</Project>

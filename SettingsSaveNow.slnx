@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="Bepis/SettingsSaveNow.Bepis.csproj" />
+  <Project Path="RML/SettingsSaveNow.RML.csproj" />
+  <Project Path="Tests/SettingsSaveNow.Tests.csproj" />
+</Solution>
